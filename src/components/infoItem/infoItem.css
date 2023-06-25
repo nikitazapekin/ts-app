@@ -1,0 +1,36 @@
+:root {
+    --info-color-light: #181818;
+    --info-color-dark: #181818;
+  }
+  
+  body[data-theme='light'] .infoItem {
+    color: var(--info-color-light);
+  }
+  
+  body[data-theme='dark'] .infoItem {
+    color: var(--info-color-dark);
+  }
+  
+  .infoItem {
+    font-size: .75rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+  }
+  
+  .infoItem svg {
+    fill: var(--info-color-light);
+    margin-right: 1rem;
+  }
+  
+  .infoItem.empty {
+    opacity: .75;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
